@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: default
 title: Notes
 ---
+
+# Notes
 
 This is where I'll share my thoughts, ideas, and learnings on various topics including:
 

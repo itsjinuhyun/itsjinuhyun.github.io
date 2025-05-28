@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: default
 title: Projects
 ---
+
+# Projects
 
 This is where I'll showcase my projects. Each project will include:
 
