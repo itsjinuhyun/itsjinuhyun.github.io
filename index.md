@@ -2,19 +2,10 @@
 layout: default
 ---
 
-# Jinu Hyun
-
 Contact: jinuhyun@nyu.edu  
 GitHub: [itsjinuhyun](https://github.com/itsjinuhyun)  
 
-I'm a Data Scientist with a background in Mathematics and Data Science. I hold a Master's degree in Data Science from New York University and a Bachelor's degree in Mathematics from the University of Texas at Austin.
+I'm Jinu Hyun, an M.S. Data Science student at New York University. Previously, I received a B.S. in Mathematics from UT Austin.
 
-My expertise lies in applying mathematical and statistical methods to solve complex data problems. I am passionate about leveraging data-driven insights to create meaningful solutions and drive informed decision-making.
+I'm interested in all things data, statistics, and machine learning -- below are my notes and thoughts on things I find interesting and am working on.
 
-## Projects
-
-Coming soon...
-
-## Notes
-
-Coming soon... 
