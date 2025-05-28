@@ -7,7 +7,10 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jemoji'
   gem 'webrick', '~> 1.8'
+  gem 'jekyll-paginate'
+  gem 'jekyll-gist'
+  gem 'jekyll-include-cache'
 end
 
-gem 'github-pages'
+gem 'github-pages', group: :jekyll_plugins
 gem 'connection_pool', '2.5.0'
