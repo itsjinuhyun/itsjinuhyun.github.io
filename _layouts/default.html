@@ -1,31 +1,33 @@
----
-layout: compress
----
-
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
 
-    {{ content }}
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      </header>
+      <section>
 
-    <div class="page__footer">
+      {{ content }}
+
+      </section>
       <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
+        <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
-    {% include scripts.html %}
-
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
-</html>
+</html> 

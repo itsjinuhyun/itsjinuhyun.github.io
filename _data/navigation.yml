@@ -1,8 +1,0 @@
-# Main navigation links
-
-main:
-  - title: "About Me"
-    url: /about/
-    
-  - title: "Thoughts"
-    url: /thoughts/ 
