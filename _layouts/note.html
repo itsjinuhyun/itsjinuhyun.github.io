@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+<div class="note">
+  <div class="note-metadata">
+    {% if page.date %}
+      <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
+    {% endif %}
+    
+    {% if page.categories %}
+      <p class="categories">
+        Categories: 
+        {% for category in page.categories %}
+          <span class="category">{{ category }}</span>
+        {% endfor %}
+      </p>
+    {% endif %}
+  </div>
+
+  <div class="note-content">
+    {{ content }}
+  </div>
+</div> 

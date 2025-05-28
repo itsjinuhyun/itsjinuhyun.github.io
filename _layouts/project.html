@@ -1,0 +1,28 @@
+---
+layout: page
+---
+
+<div class="project">
+  {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-image">
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.github %}
+    <p><a href="{{ page.github }}" target="_blank">View on GitHub</a></p>
+  {% endif %}
+
+  {% if page.demo %}
+    <p><a href="{{ page.demo }}" target="_blank">Live Demo</a></p>
+  {% endif %}
+
+  {% if page.technologies %}
+    <h2>Technologies</h2>
+    <ul class="technologies">
+      {% for tech in page.technologies %}
+        <li>{{ tech }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div> 
