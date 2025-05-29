@@ -18,6 +18,12 @@ collections:
   notes:
     output: true
     permalink: /notes/:path/
+  blog:
+    output: true
+    permalink: /blog/:path/
+  misc:
+    output: true
+    permalink: /misc/:path/
 
 # Defaults
 defaults:
@@ -31,6 +37,16 @@ defaults:
       type: "notes"
     values:
       layout: "note"
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "misc"
+    values:
+      layout: "default"
 
 github:
   is_project_page: false 
