@@ -152,12 +152,11 @@ generator = pipeline('text-generation',
 response = generator("Explain like I'm five: How does gravity work?")
 ```
 
-## General Practice
+## Key Takeaways
 
-
-Key Takeaways:
 > 1. Data preprocessing is most critical. In our case, we flattened the nested structure, concatenated the sequences, and chunked it into fixed-size blocks.
 > 2. Use the tokenizer that matches your model.
 > 3. The fine-tuned model excels at ELI5-style explanations but won't have improved factual knowledge outside of its training data. Therefore, what's most important is aligning data preparation and training to the specific use case. 
+> 4. Use similar 'concatenate-and-chunk' approach when training causal language models, working with long-form text where document boundaries aren't critical, or want to optimize for training efficiency on large text corpa. ELI5 approach, with the text-generation task, allows us to treat the text as one continuous stream. For other tasks, requirements differ.
 
 For future work, I'd like to finetune GPT-2 for several other practical tasks, learning to accurately preprocess diverse datasets for niche usage cases. Then, I want to finetune an open-source Llama (7B+ parameters) with LoRA.
