@@ -15,15 +15,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  notes:
-    output: true
-    permalink: /notes/:path/
   blog:
     output: true
     permalink: /blog/:path/
-  misc:
-    output: true
-    permalink: /misc/:path/
 
 # Defaults
 defaults:
@@ -34,17 +28,7 @@ defaults:
       layout: "project"
   - scope:
       path: ""
-      type: "notes"
-    values:
-      layout: "note"
-  - scope:
-      path: ""
       type: "blog"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "misc"
     values:
       layout: "default"
 
