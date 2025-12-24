@@ -6,10 +6,12 @@ title: Projects
 # Projects
 
 {% for project in site.projects %}
-  <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
-  {% if project.excerpt %}
-    <p>{{ project.excerpt }}</p>
-  {% else %}
-    <p>{{ project.content | strip_html | truncatewords: 50 }}</p>
-  {% endif %}
+## [{{ project.title }}]({{ project.url }})
+
+{% if project.excerpt %}
+{{ project.excerpt }}
+{% else %}
+{{ project.content | strip_html | truncatewords: 50 }}
+{% endif %}
+
 {% endfor %}
