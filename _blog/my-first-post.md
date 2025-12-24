@@ -7,8 +7,6 @@ categories: [Personal, Technology]
 
 # Finetuning GPT-2
 
-*June 5, 2025*
-
 ## About GPT-2
 Most transformer models are a variant of 3 main types of language models:
 
